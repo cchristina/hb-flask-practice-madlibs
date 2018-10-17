@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}A compliment{% endblock %}
+
+
+{% block content %}
+    <h1>Hi {{ person }}! I think you're {{ compliment }}! Let's play!  </h1>
+
+
+    <form action="/game" method="GET">
+    <input type="radio" name="letsplay" value="1">Heck yeah!
+    <input type="radio" name="letsplay" value="0">Naaaaaah 
+ 	<input type="submit">
+    </form>                                                                                               
+</body>
+</html>
+
+{% endblock %}

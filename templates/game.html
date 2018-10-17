@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}GAME!{% endblock %}
+
+
+{% block content %}
+
+<h1>Alright! Let's go! </h1>
+<!-- <div id="gameform"> -->
+    <form id="madlibform" action="/madlib" method="GET">
+    	<table>
+	    <br><tr> <th>Person 	</th><th> <input type="text" name="person"></th></tr>
+	    <br><tr> <th>Another Person 	</th><th> <input type="text" name="person1"></th></tr>
+		<br><tr> <th>Color 		</th><th> <input type="text" name="color"></th></tr>
+		<br><tr> <th>Noun 		</th><th> <input type="text" name="noun"></th></tr>
+		<br><tr> <th>Another Noun 		</th><th> <input type="text" name="noun1"></th></tr>
+		<br><tr> <th>Adjective  </th><th> <input type="text" name="adjective"></th></tr>
+		<br><tr> <th>Adverb  </th><th> <input type="text" name="adverb"></th></tr>
+		<br><tr><th> Choose one:</th><th> 
+			<input type="radio" name="rightleft" value="right">Right
+			<input type="radio" name="rightleft" value="left">Left
+			<input type="radio" name="rightleft" value=" ">n/a
+		</th><th> Body Part: </th><th> <input type="text" name="bodypart"></th></tr>
+		<br>
+	</table>
+		Past Tense
+	    <select name='pastverb'>  
+        <option selected disabled>Past Tense Verb</option>     
+        <option value='died'>died</option>
+        <option value ='exploded'>exploded</option>
+        <option value ='morphed into a chicken'>morphed into...</option>
+        <option value ='flew-away'>flew away</option>
+        <option value ='melted into a sentient metalic ooze'>melted into...</option>
+        <option value ='grew multiple tentatcles'>grew multiple...</option>
+        <option value='won the Nobel Peace Prize'>won the...</option>
+        <option value ='sneezed'>sneezed</option>
+        <option value ='rolled down a hill'>rolled down a hill</option>
+        <option value ='announced their intention to run for president for an independent party'>announced their...</option>
+        <option value ='booped'>booped</option>
+        <option value='made some cookies'>made some cookies</option>
+        <option value ='loudly mumbled something about needing to speak to you in the kitchen'>mumbled...</option>
+        <option value ='died'>also died</option><br><br>
+
+        </select>
+
+
+ 	<input type="submit">
+
+    </form>                                                                                    
+    <!-- </div>            -->
+{% endblock %}
+
+
